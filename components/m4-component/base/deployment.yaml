@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: m4-component
     spec:
       containers:
-      - image: quay.io/damoreno/foobar:dev-code-with-quarkus
+      - image: quay.io/redhat-appstudio/user-workload:demo-m4-component
         imagePullPolicy: Always
         name: container-image
         resources: {}

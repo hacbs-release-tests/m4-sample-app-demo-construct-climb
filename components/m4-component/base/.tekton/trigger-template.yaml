@@ -26,13 +26,13 @@ spec:
       - name: git-url
         value: https://github.com/sbose78/devfile-sample-code-with-quarkus
       - name: output-image
-        value: quay.io/damoreno/foobar:dev-code-with-quarkus-$(tt.params.git-revision)
+        value: quay.io/redhat-appstudio/user-workload:demo-m4-component-$(tt.params.git-revision)
       - name: dockerfile
         value: src/main/docker/Dockerfile.jvm.staged
       - name: path-context
         value: .
       pipelineRef:
-        bundle: quay.io/redhat-appstudio/build-templates-bundle:8201a567956ba6d2095d615ea2c0f6ab35f9ba5f
+        bundle: quay.io/redhat-appstudio/build-templates-bundle:fb1a1291cff78de06353a9748532a826f3a557f7
         name: docker-build
       workspaces:
       - name: workspace
